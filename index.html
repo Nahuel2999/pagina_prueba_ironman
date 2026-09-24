@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primera Página | Inicio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Mi Primera Página</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="seccion-inicio">
+      <h2>Bienvenido</h2>
+
+      <p>
+        Esta es mi primera página web creada en VS Code.
+        Usaré como ejemplo al personaje Iron Man de Marvel para mostrar mis habilidades.
+      </p>
+
+      <figure>
+        <img src="assets/iron_man1.png" alt="Iron Man en su versión de cómics">
+
+        <figcaption>Iron Man Comics.</figcaption>
+      </figure>
+    </section>
+
+    <section id="historia" class="seccion-historia">
+      <h2>Historia de Iron Man</h2>
+
+      <article class="tarjeta-historia">
+        <h3>Origen de Iron Man</h3>
+
+        <p>
+          Iron Man es un superhéroe de Marvel Comics creado por Stan Lee,
+          Larry Lieber, Don Heck y Jack Kirby. Su primera aparición fue en
+          Tales of Suspense #39 en 1963.
+        </p>
+
+        <p>
+          El personaje es la identidad secreta de Tony Stark, un multimillonario
+          industrial y genio inventor que construye una armadura avanzada para
+          salvar su vida y proteger al mundo.
+        </p>
+
+        <p>
+          Podés visitar
+          <a href="https://marvelall.fandom.com/es/wiki/Iron_Man" target="_blank">este enlace</a>
+          para conocer más sobre Iron Man.
+        </p>
+
+        <figure>
+          <video src="assets/iron_man_historia.mp4" controls></video>
+
+          <figcaption>Video sobre la historia de Iron Man.</figcaption>
+        </figure>
+
+        <figure>
+          <audio src="assets/Repulsor Blast Iron Man Sound Effect.mp3" controls></audio>
+
+          <figcaption>Sonido del repulsor de Iron Man.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="sobre-mi" class="seccion-sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Estoy aprendiendo desarrollo web con HTML y CSS.</p>
+    </section>
+
+    <section class="seccion-servicios">
+      <h2>Lo que estoy aprendiendo</h2>
+
+      <article class="tarjeta-aprendizaje">
+        <h3>HTML</h3>
+        <p>HTML sirve para crear la estructura de una página web.</p>
+      </article>
+
+      <article class="tarjeta-aprendizaje">
+        <h3>CSS</h3>
+        <p>CSS sirve para darle colores, tamaños y estilos a la página.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Dato extra</h2>
+      <p>Esta página utiliza etiquetas semánticas de HTML5.</p>
+    </aside>
+
+    <section id="contacto" class="seccion-contacto">
+      <h2>Contacto</h2>
+
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Mi Primera Página</p>
+    <p>Contacto: ejemplo@email.com</p>
+  </footer>
+</body>
+</html>
