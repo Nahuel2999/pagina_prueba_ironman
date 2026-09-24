@@ -27,6 +27,12 @@ nav a {
   font-weight: 700;
 }
 
+/* Cambio de color al pasar el mouse sobre un enlace */
+nav a:hover {
+  color: #FFD700;
+}
+
+
 /* Títulos de las secciones */
 h2 {
   color: rgb(139, 0, 0);
