@@ -13,41 +13,52 @@ body {
 /* Encabezado */
 header {
   background-color: #8B0000;
-  color: white;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between; /* Título a la izquierda, menú a la derecha */
+  align-items: center;            /* Centra verticalmente ambos elementos */
+  padding: 1rem 2rem;             /* Relleno interno para que no quede pegado a los bordes */
 }
 
 /* Enlaces del menú */
-nav a {
-  color: white;
-  font-weight: 700;
+/* Quitar puntos y márgenes por defecto de la lista */
+nav ul {
+  list-style: none;     /* Quita los puntos/viñetas */
+  padding: 0;           /* Quita la sangría por defecto del navegador */
+  margin: 0;            /* Quita márgenes externos del ul */
+  display: flex;        /* Coloca los elementos uno al lado del otro en horizontal */
+  gap: 1.5rem;          /* Agrega separación pareja entre cada enlace */
 }
 
-/* Cambio de color al pasar el mouse sobre un enlace */
+/* Estilo de los enlaces */
+nav a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none; /* Quita el subrayado azul/blanco por defecto */
+}
+
+/* Efecto hover */
 nav a:hover {
   color: #FFD700;
+  text-decoration: underline; /* Opcional: que se subraye solo al pasar el mouse */
 }
 
 
 /* Títulos de las secciones */
 h2 {
-  color: rgb(139, 0, 0);
+  color: #8b0000;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 /* Sección de bienvenida */
 .seccion-inicio {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffffcc;
 }
 
 /* Sección de historia */
 .seccion-historia {
-  background-color: hsl(0, 100%, 95%);
+  background-color: #ffe5e5;
 }
 
 /* Título dentro del artículo sobre Iron Man */
@@ -71,5 +82,36 @@ aside {
 /* Pie de página */
 footer {
   background-color: #1A1A1A;
-  color: white;
+  color: #ffffff;
+}
+
+/* Sección de armaduras */
+.seccion-armaduras {
+  background-color: #ffe5e5;
+}
+
+/* Contenedor de las tarjetas de armaduras en grilla */
+.seccion-armaduras {
+  background-color: #ffe5e5;
+  padding: 1.5rem;
+}
+
+.grid-armaduras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Tarjetas individuales de cada armadura */
+.tarjeta-armadura {
+  background-color: #ffffffcc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tarjeta-armadura img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
